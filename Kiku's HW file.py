@@ -1,13 +1,30 @@
 """Important your modules here:"""
 
-#import Sympy in the line below:
+#import sympy in the line below:
+import sympy as sp
+import numpy as np
+
+#from sympy.vector import coords3d in the line below
+from sympy.vector import CoordSys3D
+N = CoordSys3D('N')
+
+from sympy import *
+x, y, z = symbols('x y z')
 
 
 ###########################################################################################
-def theHomework():
-    pass   
+def theProblem():
+#     x=sp.pi/2
+#     #insert y in the line below
+     vector_y = N.i + sp.sin(x)*N.j
+#     
+#     f = (sp.E)*N.i
+#     print(f)
+#     #what does this function need to return? write it below
+#     return y
 def main():
-    pass
+     print(theProblem())
+#     
 
 if __name__ == "__main__":
-  main()
+    main()
